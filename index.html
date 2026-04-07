@@ -8,17 +8,20 @@
     <meta name="description"
         content="Matrix Madeiras - 30+ anos de tradição. Madeiras, MDF, telhas, portas, ferragens e serviços de corte CNC. Entrega grátis até 15km. Paciência, Rio de Janeiro.">
 
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#2B7A1F">
+    
     <!-- Preload Crítico - LCP Optimization -->
     <link rel="preload" as="image" href="assets/Imagens loja/madeiras-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (5).webp" fetchpriority="high">
     <link rel="preload" as="font" href="https://fonts.gstatic.com/s/barlowcondensed/v12/HTx3L3I-JCGChYJ8VI-L6OO_au7B47rxzXCIrw.woff2" type="font/woff2" crossorigin>
     <link rel="preload" as="font" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2" type="font/woff2" crossorigin>
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts - Otimizado para não bloquear renderização -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600&display=swap"
-        rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600&display=swap"></noscript>
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%232B7A1F' rx='15' width='100' height='100'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='serif' font-size='55' font-weight='bold' fill='%23C49A3C'%3EM%3C/text%3E%3C/svg%3E">
@@ -192,60 +195,17 @@
           "inLanguage": "pt-BR",
           "datePublished": "2024-01-01",
           "dateModified": "2026-04-07"
-        },
-        {
-          "@type": "FAQPage",
-          "@id": "http://www.matrixmadeiras.ag5agencia.site/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Qual o horário de funcionamento?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Funcionamos de segunda a sexta-feira das 8h às 18h, e aos sábados das 8h às 13h. Domingos fechados."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Vocês entregam? Qual a taxa?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sim, entregamos em toda a Zona Oeste do Rio de Janeiro. A entrega é GRÁTIS para regiões em até 15km da loja. Consulte valores para outras regiões pelo WhatsApp."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Fazem corte de MDF na medida?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sim! Temos máquina SCM Star de corte e fitagem CNC. Fazemos cortes sob medida com precisão milimétrica e fitagem de borda profissional."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Quais formas de pagamento aceitam?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Aceitamos dinheiro, PIX, cartões de débito e crédito (parcelamos em até 12x), e também trabalhamos com carnê para clientes cadastrados."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Montam caixonete e colocam fechadura?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sim! Oferecemos serviço de montagem de caixonete e colocação de fechaduras e dobradiças nas portas. Consulte valores pelo WhatsApp."
-              }
-            }
-          ]
         }
       ]
     }
     </script>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="cookie-banner.css">
+    <!-- CSS - Preload para eliminar bloqueio de renderização -->
+    <link rel="preload" as="style" href="style.css">
+    <link rel="preload" as="style" href="cookie-banner.css">
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="cookie-banner.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="cookie-banner.css"></noscript>
 </head>
 
 <body>
@@ -255,9 +215,9 @@
             <div class="container nav-main-content">
                 <a href="#" class="logo">
                     <img src="assets/logo-desktop-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro.webp"
-                        alt="Matrix Madeiras" class="logo-desktop" width="200" height="50">
+                        alt="Matrix Madeiras" class="logo-desktop" width="200" height="50" decoding="async">
                     <img src="assets/logo-mobile-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro(1).webp"
-                        alt="Matrix Madeiras" class="logo-mobile" width="150" height="40">
+                        alt="Matrix Madeiras" class="logo-mobile" width="150" height="40" decoding="async">
                 </a>
                 <button class="nav-toggle" id="navToggle" aria-label="Menu">
                     <span></span>
@@ -265,10 +225,10 @@
                     <span></span>
                 </button>
                 <ul class="nav-menu" id="navMenu">
+                    <li><a href="#hero" class="nav-link">Início</a></li>
                     <li><a href="#servicos" class="nav-link">Produtos</a></li>
                     <li><a href="#sobre" class="nav-link">Sobre</a></li>
                     <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
-                    <li><a href="#faq" class="nav-link">FAQ</a></li>
                     <li><a href="#contato" class="nav-link">Contato</a></li>
                     <li><a href="https://wa.me/5521964236743?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o." class="btn btn-nav" target="_blank">Solicitar
                             Orçamento</a></li>
@@ -307,7 +267,7 @@
                 </div>
             </div>
             <div class="hero-video-wrapper">
-                <video autoplay muted loop playsinline class="hero-video-right"
+                <video autoplay muted loop playsinline class="hero-video-right" preload="metadata"
                     poster="assets/Imagens loja/frete-loja-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (6).webp">
                     <source src="assets/video-sobre-madeira-e-sobre-matrix-madeiras.mp4" type="video/mp4">
                 </video>
@@ -433,7 +393,7 @@
         <div class="zigzag-item">
             <div class="zigzag-image">
                 <img src="assets/Imagens loja/mdf-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (1).webp"
-                    alt="MDF e Corte CNC na Matrix Madeiras" width="800" height="600" loading="lazy">
+                    alt="MDF e Corte CNC na Matrix Madeiras" width="800" height="600" loading="lazy" decoding="async">
             </div>
             <div class="zigzag-content">
                 <span class="zigzag-number">01</span>
@@ -461,7 +421,7 @@
         <div class="zigzag-item zigzag-reverse">
             <div class="zigzag-image">
                 <img src="assets/Imagens loja/madeiras-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (5).webp"
-                    alt="Madeiras na Matrix Madeiras" width="800" height="600" loading="lazy">
+                    alt="Madeiras na Matrix Madeiras" width="800" height="600" loading="lazy" decoding="async">
             </div>
             <div class="zigzag-content">
                 <span class="zigzag-number">02</span>
@@ -489,7 +449,7 @@
         <div class="zigzag-item">
             <div class="zigzag-image">
                 <img src="assets/Imagens loja/telha-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (2).webp"
-                    alt="Telhas na Matrix Madeiras" width="800" height="600" loading="lazy">
+                    alt="Telhas na Matrix Madeiras" width="800" height="600" loading="lazy" decoding="async">
             </div>
             <div class="zigzag-content">
                 <span class="zigzag-number">03</span>
@@ -517,7 +477,7 @@
         <div class="zigzag-item zigzag-reverse">
             <div class="zigzag-image">
                 <img src="assets/Imagens loja/portas-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (7).webp"
-                    alt="Portas na Matrix Madeiras" width="800" height="600" loading="lazy">
+                    alt="Portas na Matrix Madeiras" width="800" height="600" loading="lazy" decoding="async">
             </div>
             <div class="zigzag-content">
                 <span class="zigzag-number">04</span>
@@ -563,7 +523,7 @@
                 </div>
                 <div class="encantamento-image">
                     <img src="assets/Imagens loja/maquina-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (9).webp"
-                        alt="Máquina SCM Star de Fitagem na Matrix Madeiras" width="800" height="600" loading="lazy">
+                        alt="Máquina SCM Star de Fitagem na Matrix Madeiras" width="800" height="600" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>
@@ -580,7 +540,7 @@
             </div>
         </div>
         <div class="drone-video-container">
-            <video id="droneVideo" autoplay muted playsinline class="drone-video"
+            <video id="droneVideo" autoplay muted playsinline class="drone-video" preload="metadata"
                 poster="assets/Imagens loja/frete-loja-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (6).webp">
                 <source
                     src="assets/video-drone-loja-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro.mp4"
@@ -672,28 +632,28 @@
             <div class="sobre-gallery">
                 <div class="sobre-gallery-item"><img
                         src="assets/Imagens loja/frete-loja-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (6).webp"
-                        alt="Fachada da Loja Matrix Madeiras em Paciência RJ" width="600" height="400" loading="lazy"></div>
+                        alt="Fachada da Loja Matrix Madeiras em Paciência RJ" width="600" height="400" loading="lazy" decoding="async"></div>
                 <div class="sobre-gallery-item"><img
                         src="assets/Imagens loja/madeiras-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (5).webp"
-                        alt="Estoque de Madeiras na Matrix Madeiras" width="400" height="400" loading="lazy"></div>
+                        alt="Estoque de Madeiras na Matrix Madeiras" width="400" height="400" loading="lazy" decoding="async"></div>
                 <div class="sobre-gallery-item"><img
                         src="assets/Imagens loja/maquina-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (9).webp"
-                        alt="Máquina SCM Star de Corte CNC na Matrix Madeiras" width="400" height="800" loading="lazy"></div>
+                        alt="Máquina SCM Star de Corte CNC na Matrix Madeiras" width="400" height="800" loading="lazy" decoding="async"></div>
                 <div class="sobre-gallery-item"><img
                         src="assets/Imagens loja/matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (8).webp"
-                        alt="Interior da Loja Matrix Madeiras" width="400" height="400" loading="lazy"></div>
+                        alt="Interior da Loja Matrix Madeiras" width="400" height="400" loading="lazy" decoding="async"></div>
                 <div class="sobre-gallery-item"><img
                         src="assets/Imagens loja/matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (10).webp"
-                        alt="Serviço de Corte CNC na Matrix Madeiras" width="400" height="400" loading="lazy"></div>
+                        alt="Serviço de Corte CNC na Matrix Madeiras" width="400" height="400" loading="lazy" decoding="async"></div>
                 <div class="sobre-gallery-item"><img
                         src="assets/Imagens loja/mdf-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (1).webp"
-                        alt="Estoque de MDF na Matrix Madeiras" width="400" height="400" loading="lazy"></div>
+                        alt="Estoque de MDF na Matrix Madeiras" width="400" height="400" loading="lazy" decoding="async"></div>
                 <div class="sobre-gallery-item"><img
                         src="assets/Imagens loja/telha-amianto-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (4).webp"
-                        alt="Telhas Fibrocimento na Matrix Madeiras" width="400" height="400" loading="lazy"></div>
+                        alt="Telhas Fibrocimento na Matrix Madeiras" width="400" height="400" loading="lazy" decoding="async"></div>
                 <div class="sobre-gallery-item"><img
                         src="assets/Imagens loja/portas-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (7).webp"
-                        alt="Mostruário de Portas de Madeira na Matrix Madeiras" width="400" height="400" loading="lazy"></div>
+                        alt="Mostruário de Portas de Madeira na Matrix Madeiras" width="400" height="400" loading="lazy" decoding="async"></div>
             </div>
         </div>
     </section>
@@ -948,19 +908,19 @@
             <div class="carousel-fade-left"></div>
             <div class="instagram-track">
                 <!-- Vídeo sobre corte madeira -->
-                <div class="instagram-slide"><iframe src="https://www.instagram.com/p/DM_Xd5YSI2a/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true"></iframe></div>
+                <div class="instagram-slide"><iframe src="https://www.instagram.com/p/DM_Xd5YSI2a/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true" title="Vídeo sobre corte de madeira na Matrix Madeiras" loading="lazy" fetchpriority="low"></iframe></div>
                 <!-- Vídeo sobre telhas -->
-                <div class="instagram-slide"><iframe src="https://www.instagram.com/p/DOhK9xhD2rV/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true"></iframe></div>
+                <div class="instagram-slide"><iframe src="https://www.instagram.com/p/DOhK9xhD2rV/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true" title="Vídeo sobre telhas na Matrix Madeiras" loading="lazy" fetchpriority="low"></iframe></div>
                 <!-- Vídeo sobre mdf -->
-                <div class="instagram-slide"><iframe src="https://www.instagram.com/p/DQCUzyKEYrw/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true"></iframe></div>
+                <div class="instagram-slide"><iframe src="https://www.instagram.com/p/DQCUzyKEYrw/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true" title="Vídeo sobre MDF na Matrix Madeiras" loading="lazy" fetchpriority="low"></iframe></div>
                 <!-- Vídeo sobre luminárias -->
-                <div class="instagram-slide"><iframe src="https://www.instagram.com/p/DWCNANukQBx/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true"></iframe></div>
+                <div class="instagram-slide"><iframe src="https://www.instagram.com/p/DWCNANukQBx/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true" title="Vídeo sobre luminárias na Matrix Madeiras" loading="lazy" fetchpriority="low"></iframe></div>
 
                 <!-- Clones para loop infinito -->
-                <div class="instagram-slide" aria-hidden="true"><iframe src="https://www.instagram.com/p/DM_Xd5YSI2a/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true"></iframe></div>
-                <div class="instagram-slide" aria-hidden="true"><iframe src="https://www.instagram.com/p/DOhK9xhD2rV/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true"></iframe></div>
-                <div class="instagram-slide" aria-hidden="true"><iframe src="https://www.instagram.com/p/DQCUzyKEYrw/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true"></iframe></div>
-                <div class="instagram-slide" aria-hidden="true"><iframe src="https://www.instagram.com/p/DWCNANukQBx/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true"></iframe></div>
+                <div class="instagram-slide" aria-hidden="true"><iframe src="https://www.instagram.com/p/DM_Xd5YSI2a/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true" title="" loading="lazy" fetchpriority="low"></iframe></div>
+                <div class="instagram-slide" aria-hidden="true"><iframe src="https://www.instagram.com/p/DOhK9xhD2rV/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true" title="" loading="lazy" fetchpriority="low"></iframe></div>
+                <div class="instagram-slide" aria-hidden="true"><iframe src="https://www.instagram.com/p/DQCUzyKEYrw/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true" title="" loading="lazy" fetchpriority="low"></iframe></div>
+                <div class="instagram-slide" aria-hidden="true"><iframe src="https://www.instagram.com/p/DWCNANukQBx/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true" title="" loading="lazy" fetchpriority="low"></iframe></div>
             </div>
             <div class="carousel-fade-right"></div>
         </div>
@@ -970,105 +930,18 @@
             <div class="carousel-fade-left"></div>
             <div class="instagram-track track-reverse">
                 <!-- Vídeo sobre todos os acessórios -->
-                <div class="instagram-slide"><iframe src="https://www.instagram.com/p/DSYNWrFEub6/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true"></iframe></div>
+                <div class="instagram-slide"><iframe src="https://www.instagram.com/p/DSYNWrFEub6/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true" title="Vídeo sobre acessórios na Matrix Madeiras" loading="lazy" fetchpriority="low"></iframe></div>
                 <!-- Vídeo com influencer falando sobre as madeiras -->
-                <div class="instagram-slide"><iframe src="https://www.instagram.com/p/DIjm21pPQw4/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true"></iframe></div>
+                <div class="instagram-slide"><iframe src="https://www.instagram.com/p/DIjm21pPQw4/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true" title="Vídeo com influencer sobre madeiras na Matrix Madeiras" loading="lazy" fetchpriority="low"></iframe></div>
                 <!-- Vídeo sobre portas -->
-                <div class="instagram-slide"><iframe src="https://www.instagram.com/p/DJXVW7ly3Ie/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true"></iframe></div>
+                <div class="instagram-slide"><iframe src="https://www.instagram.com/p/DJXVW7ly3Ie/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true" title="Vídeo sobre portas na Matrix Madeiras" loading="lazy" fetchpriority="low"></iframe></div>
 
                 <!-- Clones para loop infinito -->
-                <div class="instagram-slide" aria-hidden="true"><iframe src="https://www.instagram.com/p/DSYNWrFEub6/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true"></iframe></div>
-                <div class="instagram-slide" aria-hidden="true"><iframe src="https://www.instagram.com/p/DIjm21pPQw4/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true"></iframe></div>
-                <div class="instagram-slide" aria-hidden="true"><iframe src="https://www.instagram.com/p/DJXVW7ly3Ie/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true"></iframe></div>
+                <div class="instagram-slide" aria-hidden="true"><iframe src="https://www.instagram.com/p/DSYNWrFEub6/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true" title="" loading="lazy" fetchpriority="low"></iframe></div>
+                <div class="instagram-slide" aria-hidden="true"><iframe src="https://www.instagram.com/p/DIjm21pPQw4/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true" title="" loading="lazy" fetchpriority="low"></iframe></div>
+                <div class="instagram-slide" aria-hidden="true"><iframe src="https://www.instagram.com/p/DJXVW7ly3Ie/embed" width="320" height="540" frameborder="0" scrolling="no" allowtransparency="true" title="" loading="lazy" fetchpriority="low"></iframe></div>
             </div>
             <div class="carousel-fade-right"></div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Dúvidas Frequentes</span>
-                <h2 class="section-title">Perguntas e Respostas</h2>
-            </div>
-
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Qual o horário de funcionamento?</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" class="faq-icon">
-                            <line x1="12" y1="5" x2="12" y2="19" />
-                            <line x1="5" y1="12" x2="19" y2="12" />
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Funcionamos de segunda a sexta-feira das 8h às 18h, e aos sábados das 8h às 13h. Domingos
-                            fechados.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Vocês entregam? Qual a taxa?</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" class="faq-icon">
-                            <line x1="12" y1="5" x2="12" y2="19" />
-                            <line x1="5" y1="12" x2="19" y2="12" />
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Sim, entregamos em toda a Zona Oeste do Rio de Janeiro. A entrega é GRÁTIS para regiões em
-                            até 15km da loja. Consulte valores para outras regiões pelo WhatsApp.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Fazem corte de MDF na medida?</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" class="faq-icon">
-                            <line x1="12" y1="5" x2="12" y2="19" />
-                            <line x1="5" y1="12" x2="19" y2="12" />
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Sim! Temos máquina SCM Star de corte e fitagem CNC. Fazemos cortes sob medida com precisão
-                            milimétrica e fitagem de borda profissional.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Quais formas de pagamento aceitam?</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" class="faq-icon">
-                            <line x1="12" y1="5" x2="12" y2="19" />
-                            <line x1="5" y1="12" x2="19" y2="12" />
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Aceitamos dinheiro, PIX, cartões de débito e crédito (parcelamos em até 12x), e também
-                            trabalhamos com carnê para clientes cadastrados.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Montam caixonete e colocam fechadura?</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" class="faq-icon">
-                            <line x1="12" y1="5" x2="12" y2="19" />
-                            <line x1="5" y1="12" x2="19" y2="12" />
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Sim! Oferecemos serviço de montagem de caixonete e colocação de fechaduras e dobradiças nas
-                            portas. Consulte valores pelo WhatsApp.</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -1106,9 +979,9 @@
                         </div>
                     </div>
                     <div class="orcamento-contato">
-                        <a href="tel:+552133165287" class="orcamento-contato-item">
+                        <a href="tel:+552133165287" class="orcamento-contato-item" aria-label="Ligar para telefone fixo (21) 3316-5287">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
+                                stroke-width="2" aria-hidden="true">
                                 <path
                                     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                             </svg>
@@ -1117,8 +990,8 @@
                                 <strong>(21) 3316-5287</strong>
                             </div>
                         </a>
-                        <a href="https://wa.me/5521964236743?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o." class="orcamento-contato-item" target="_blank">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <a href="https://wa.me/5521964236743?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o." class="orcamento-contato-item" target="_blank" aria-label="Abrir conversa no WhatsApp (21) 96423-6743" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path
                                     d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                             </svg>
@@ -1191,16 +1064,16 @@
                         </div>
                     </div>
                     <div class="localizacao-contatos">
-                        <a href="tel:+552133165287" class="localizacao-item">
+                        <a href="tel:+552133165287" class="localizacao-item" aria-label="Ligar para telefone fixo (21) 3316-5287">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2B7A1F"
-                                stroke-width="2">
+                                stroke-width="2" aria-hidden="true">
                                 <path
                                     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                             </svg>
                             <span>(21) 3316-5287</span>
                         </a>
-                        <a href="https://wa.me/5521964236743?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o." class="localizacao-item" target="_blank">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#2B7A1F">
+                        <a href="https://wa.me/5521964236743?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o." class="localizacao-item" target="_blank" aria-label="Abrir conversa no WhatsApp (21) 96423-6743" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#2B7A1F" aria-hidden="true">
                                 <path
                                     d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                             </svg>
@@ -1244,7 +1117,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <img src="assets/logo-desktop-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro.webp"
-                        alt="Matrix Madeiras" class="footer-logo" width="200" height="50">
+                        alt="Matrix Madeiras" class="footer-logo" width="200" height="50" decoding="async" loading="lazy">
                     <p>Há 30 anos no Rio, a Matrix Madeiras é referência em soluções para marcenaria. Oferecemos MDF sob medida, telhas, portas e ferragens com a agilidade e o compromisso da nossa entrega rápida em toda a região.</p>
                     <div class="footer-social">
                         <div class="social-links">
@@ -1310,44 +1183,49 @@
                         </li>
                         <li>
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
+                                stroke-width="2" aria-hidden="true">
                                 <path
                                     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                             </svg>
-                            <a href="tel:+552133165287">(21) 3316-5287</a>
+                            <a href="tel:+552133165287" aria-label="Ligar para telefone fixo (21) 3316-5287">(21) 3316-5287</a>
                         </li>
                         <li>
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path
                                     d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                             </svg>
-                            <a href="https://wa.me/5521964236743?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o." target="_blank">(21) 96423-6743</a>
+                            <a href="https://wa.me/5521964236743?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o." target="_blank" aria-label="Abrir conversa no WhatsApp (21) 96423-6743" rel="noopener noreferrer">(21) 96423-6743</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© Matrix Madeiras 2026</p>
-                <div class="footer-legal-links" style="margin-top: 6px; font-size: 11px; opacity: 0.7;">
-                    <a href="termos-e-condicoes.html" style="text-decoration: none; color: inherit;">Termos e Condições</a>
-                    <span style="margin: 0 8px;">|</span>
-                    <a href="politica-de-privacidade.html" style="text-decoration: none; color: inherit;">Política de Privacidade</a>
-                </div>
-                <p>Desenvolvido por <a href="https://www.ag5agencia.com.br" target="_blank" class="ag5-link">AG5</a>
-                    Agência</p>
-                <a href="#" id="ck-prefs-link" style="text-decoration:none; color:inherit; display:inline-flex; align-items:center; gap:6px; font-size: 0.75rem; color: rgba(255,255,255,0.6);">
-                    <span style="display:inline-flex; align-items:center; width:28px; height:14px; background:rgba(255,255,255,0.1); border-radius:10px; padding:2px; border:1px solid rgba(255,255,255,0.2); position:relative; font-size:8px; font-weight:bold;">
+                <div class="footer-credits-left">
+                    <p class="copyright">© 2026 Matrix Madeiras</p>
+                    <div class="footer-legal-links">
+                        <a href="#" id="ck-prefs-link" style="text-decoration:none; color:inherit; display:inline-flex; align-items:center; gap:6px; font-size: 0.75rem; color: rgba(255,255,255,0.6);">
+                    <span id="cookie-toggle" style="display:inline-flex; align-items:center; width:28px; height:14px; background:rgba(255,255,255,0.1); border-radius:10px; padding:2px; border:1px solid rgba(255,255,255,0.2); position:relative; font-size:8px; font-weight:bold;">
                         <span style="color:#86EFAC; margin-left:2px;">✓</span>
                         <span style="color:#FCA5A5; margin-left:auto; margin-right:2px;">✕</span>
-                        <span style="position:absolute; left:15px; width:10px; height:10px; background:#C49A3C; border-radius:50%; box-shadow:0 0 5px rgba(0,0,0,0.3);"></span>
+                        <span id="cookie-toggle-dot" style="position:absolute; left:15px; width:10px; height:10px; background:#C49A3C; border-radius:50%; box-shadow:0 0 5px rgba(0,0,0,0.3); transition:left 0.2s ease;"></span>
                     </span>
                     Cookie
                 </a>
+                        <span class="separator">|</span>
+                        <a href="termos-e-condicoes.html">Termos e Condições</a>
+                        <span class="separator">|</span>
+                        <a href="politica-de-privacidade.html">Política de Privacidade</a>
+                    </div>
+                </div>
+                <div class="footer-credits-right">
+                    <span>Desenvolvido por <a href="https://www.ag5agencia.com.br" target="_blank">AG5 Agência</a></span>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Scripts otimizados com defer para não bloquear renderização -->
+    <script src="script.js" defer></script>
 
     <!-- Modal for Image Gallery -->
     <div id="imageModal" class="modal">
@@ -1469,13 +1347,46 @@
     <button id="ck-prefs-btn" class="ck-prefs-btn" aria-label="Preferências de cookies" style="display:none;">Cookies</button>
 
     <script src="cookie-banner.js" defer></script>
+    
+    <!-- Preconnect para recursos externos -->
+    <link rel="dns-prefetch" href="https://www.google.com">
+    <link rel="dns-prefetch" href="https://www.instagram.com">
 
-    <!-- Botão Flutuante WhatsApp (AG5 Standard) -->
-    <a href="https://wa.me/5521964236743?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o." class="btn-flutuante-whatsapp" target="_blank" role="button" aria-label="Falar pelo WhatsApp">
-        <svg viewBox="0 0 16 16" width="30" height="30" fill="currentColor">
-            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-        </svg>
-    </a>
+    <!-- Botão Flutuante WhatsApp com Balão de Mensagem -->
+    <div class="whatsapp-container">
+        <!-- Balão de Mensagem (Saudação) -->
+        <div id="whatsapp-message" class="whatsapp-message-bubble">
+            <button class="close-whatsapp-bubble" aria-label="Fechar mensagem">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="whatsapp-message-header">
+                <img src="assets/logo-desktop-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro.webp" alt="Matrix Madeiras" class="whatsapp-message-avatar" width="40" height="40">
+                <div class="whatsapp-message-info">
+                    <span class="whatsapp-message-name">Matrix Madeiras</span>
+                    <span class="whatsapp-message-status">Atendimento por WhatsApp</span>
+                </div>
+            </div>
+            <div class="whatsapp-message-content">
+                <p>Olá! Ficamos felizes em ter você aqui. Estamos à disposição para o que precisar.</p>
+                <span class="whatsapp-message-time">Agora</span>
+            </div>
+        </div>
+        
+        <!-- Linha tracejada conectora (aparece quando o balão está visível) -->
+        <div class="whatsapp-connector" id="whatsapp-connector" aria-hidden="true"></div>
+        
+        <!-- Botão Flutuante -->
+        <a href="https://wa.me/5521964236743?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o." class="btn-flutuante-whatsapp" target="_blank" role="button" aria-label="Falar pelo WhatsApp">
+            <!-- Notificação Vermelha (Aparece depois) -->
+            <div class="whatsapp-notify">1</div>
+            <svg viewBox="0 0 16 16" width="30" height="30" fill="currentColor">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+            </svg>
+        </a>
+    </div>
 
     <!-- ========================================
          MOBILE DRAWER PREMIUM

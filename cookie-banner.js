@@ -146,6 +146,7 @@
         dispatch(state);
         hideBanner();
         closeModal();
+        updateFooterToggleIcon();
         toast('Todos os cookies aceitos.');
     }
 
@@ -155,6 +156,7 @@
         dispatch(state);
         hideBanner();
         closeModal();
+        updateFooterToggleIcon();
         toast('Apenas cookies necessários salvos.');
     }
 
@@ -165,6 +167,7 @@
         dispatch(state);
         hideBanner();
         closeModal();
+        updateFooterToggleIcon();
         toast('Suas preferências foram salvas.');
     }
 
@@ -175,6 +178,30 @@
         try {
             window.dispatchEvent(new CustomEvent('cookieConsentUpdated', { detail: { preferences: prefs } }));
         } catch (e) { /* IE fallback */ }
+    }
+
+    /* ============================================================
+       ATUALIZAR TOGGLE DO COOKIE NO RODAPÉ
+       ============================================================ */
+    function updateFooterToggleIcon() {
+        var toggle = document.getElementById('cookie-toggle');
+        if (!toggle) return;
+        
+        var prefs = load();
+        if (prefs && prefs.decided) {
+            // Se aceitou todos ou alguns cookies opcionais, mostrar como ativo (bolinha à direita)
+            if (prefs.functional || prefs.analytics || prefs.performance || prefs.advertising) {
+                toggle.classList.remove('inactive');
+                toggle.classList.add('active');
+            } else {
+                // Se rejeitou todos (apenas necessários), mostrar como inativo (bolinha à esquerda)
+                toggle.classList.remove('active');
+                toggle.classList.add('inactive');
+            }
+        } else {
+            // Estado padrão (ainda não decidiu) - mostrar como ativo
+            toggle.classList.add('active');
+        }
     }
 
     /* ============================================================
@@ -253,6 +280,7 @@
             // Usuário já decidiu — aplica preferências e mostra botão flutuante
             state = Object.assign({}, state, saved);
             dispatch(state);
+            updateFooterToggleIcon();
             if (CONFIG.showFloatingBtn) showFloatingBtn();
             return;
         }

@@ -5,19 +5,26 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     // ========================================
-    // NAVBAR SCROLL EFFECT
+    // NAVBAR SCROLL EFFECT - Otimizado com throttle
     // ========================================
     const navbar = document.getElementById('navbar');
+    let ticking = false;
     
     const handleNavbarScroll = () => {
-        if (window.scrollY > 80) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                if (window.scrollY > 80) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+                ticking = false;
+            });
+            ticking = true;
         }
     };
     
-    window.addEventListener('scroll', handleNavbarScroll);
+    window.addEventListener('scroll', handleNavbarScroll, { passive: true });
     
     // ========================================
     // MOBILE NAVIGATION - DRAWER PREMIUM
@@ -229,29 +236,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(nextCard, 6000);
     
     // ========================================
-    // FAQ ACCORDION
-    // ========================================
-    const faqItems = document.querySelectorAll('.faq-item');
-    
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        
-        question.addEventListener('click', () => {
-            const isActive = item.classList.contains('active');
-            
-            // Close all items
-            faqItems.forEach(faqItem => {
-                faqItem.classList.remove('active');
-            });
-            
-            // Open clicked item if it wasn't active
-            if (!isActive) {
-                item.classList.add('active');
-            }
-        });
-    });
-    
-    // ========================================
     // VIDEO SOUND CONTROL
     // ========================================
     const videoSoundBtn = document.getElementById('videoSoundBtn');
@@ -428,19 +412,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     // ========================================
-    // PARALLAX EFFECT FOR HERO
+    // PARALLAX EFFECT FOR HERO - Otimizado
     // ========================================
     const heroVideoParallax = document.querySelector('.hero-video-right');
+    let parallaxTicking = false;
     
     if (heroVideoParallax && window.innerWidth > 768) {
         window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const rate = scrolled * 0.3;
-            
-            if (rate < window.innerHeight) {
-                heroVideoParallax.style.transform = `translateY(${rate}px)`;
+            if (!parallaxTicking) {
+                window.requestAnimationFrame(() => {
+                    const scrolled = window.pageYOffset;
+                    const rate = scrolled * 0.3;
+                    
+                    if (rate < window.innerHeight) {
+                        heroVideoParallax.style.transform = `translateY(${rate}px)`;
+                    }
+                    parallaxTicking = false;
+                });
+                parallaxTicking = true;
             }
-        });
+        }, { passive: true });
     }
     
     // ========================================
@@ -519,6 +510,72 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ========================================
+    // WHATSAPP FLOATING BUTTON - Message Bubble Logic
+    // ========================================
+    const whatsappMessage = document.getElementById('whatsapp-message');
+    const whatsappNotify = document.querySelector('.whatsapp-notify');
+    const closeBubbleBtn = document.querySelector('.close-whatsapp-bubble');
+    const whatsappButton = document.querySelector('.btn-flutuante-whatsapp');
+    const whatsappConnector = document.getElementById('whatsapp-connector');
+    
+    // Alvo para disparar o balão: Seção Dor e Solução
+    const triggerSection = document.getElementById('pain-solution');
+    
+    let messageShown = false;
+    
+    // Função para mostrar a notificação vermelha (5s após o balão sumir)
+    function showNotification() {
+        setTimeout(() => {
+            if (whatsappNotify) whatsappNotify.classList.add('show');
+        }, 5000);
+    }
+    
+    // Função para esconder o balão de mensagem
+    function hideMessageBubble() {
+        if (whatsappMessage && whatsappMessage.classList.contains('show')) {
+            whatsappMessage.classList.remove('show');
+            if (whatsappConnector) whatsappConnector.classList.remove('show');
+            if (whatsappButton) whatsappButton.classList.remove('message-active');
+            showNotification();
+        }
+    }
+    
+    if (triggerSection && whatsappMessage) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !messageShown) {
+                    // Delay inicial para a mensagem aparecer (800ms)
+                    setTimeout(() => {
+                        whatsappMessage.classList.add('show');
+                        if (whatsappConnector) whatsappConnector.classList.add('show');
+                        if (whatsappButton) whatsappButton.classList.add('message-active');
+                        messageShown = true;
+                        
+                        // Auto-esconder após 15 segundos
+                        setTimeout(() => {
+                            hideMessageBubble();
+                        }, 15000);
+                    }, 800);
+                    
+                    // Dispara apenas uma vez
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        observer.observe(triggerSection);
+    }
+    
+    // Fechamento Manual do balão
+    if (closeBubbleBtn && whatsappMessage) {
+        closeBubbleBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            hideMessageBubble();
+        });
+    }
+    
     // ========================================
     // CONSOLE LOG - Branding
     // ========================================
