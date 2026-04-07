@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Allow AI bots for GEO (Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: http://www.matrixmadeiras.ag5agencia.site/sitemap.xml

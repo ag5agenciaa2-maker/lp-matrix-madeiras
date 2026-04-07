@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade | Matrix Madeiras</title>
+    <meta name="description" content="Saiba como a Matrix Madeiras trata seus dados pessoais em conformidade com a LGPD (Lei 13.709/2018).">
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%232B7A1F' rx='15' width='100' height='100'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='serif' font-size='55' font-weight='bold' fill='%23C49A3C'%3EM%3C/text%3E%3C/svg%3E">
+    <link rel="alternate icon" type="image/x-icon" href="assets/icon-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro.ico">
+
+    <!-- CSS principal do site -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ========================================
+           Estilos específicos das páginas legais
+        ======================================== */
+        .legal-page {
+            background: #fff;
+        }
+
+        .legal-main {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 80px 24px 64px;
+        }
+
+        .legal-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            color: #6B7280;
+            margin-bottom: 40px;
+        }
+
+        .legal-breadcrumb a {
+            color: #2B7A1F;
+            text-decoration: none;
+        }
+
+        .legal-breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .legal-header {
+            border-bottom: 3px solid #2B7A1F;
+            padding-bottom: 24px;
+            margin-bottom: 40px;
+        }
+
+        .legal-label {
+            display: inline-block;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #2B7A1F;
+            background: rgba(43, 122, 31, 0.08);
+            padding: 4px 12px;
+            border-radius: 2px;
+            margin-bottom: 16px;
+        }
+
+        .legal-main h1 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: clamp(28px, 5vw, 42px);
+            font-weight: 800;
+            color: #0D1117;
+            line-height: 1.1;
+            margin: 0 0 12px;
+        }
+
+        .legal-update {
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            color: #6B7280;
+            margin: 4px 0 0;
+        }
+
+        .legal-lgpd-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #EFF6FF;
+            color: #1D4ED8;
+            border: 1px solid #BFDBFE;
+            border-radius: 3px;
+            padding: 4px 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 12px;
+        }
+
+        .legal-intro {
+            background: #F8FAF7;
+            border-left: 4px solid #2B7A1F;
+            padding: 20px 24px;
+            border-radius: 0 4px 4px 0;
+            margin-bottom: 40px;
+        }
+
+        .legal-intro p {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            line-height: 1.7;
+            color: #374151;
+            margin: 0;
+        }
+
+        .legal-section {
+            margin-bottom: 40px;
+        }
+
+        .legal-section h2 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #0D1117;
+            margin: 0 0 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .legal-section h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: #1F2937;
+            margin: 20px 0 8px;
+        }
+
+        .legal-section p,
+        .legal-section li {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            line-height: 1.8;
+            color: #374151;
+        }
+
+        .legal-section ul {
+            padding-left: 20px;
+            margin: 12px 0;
+        }
+
+        .legal-section ul li {
+            margin-bottom: 6px;
+        }
+
+        .legal-section a {
+            color: #2B7A1F;
+            text-decoration: underline;
+        }
+
+        /* Tabela de cookies */
+        .cookies-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            margin: 16px 0;
+        }
+
+        .cookies-table th {
+            background: #0D1117;
+            color: #fff;
+            padding: 10px 14px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .cookies-table td {
+            padding: 10px 14px;
+            border-bottom: 1px solid #E5E7EB;
+            color: #374151;
+            vertical-align: top;
+        }
+
+        .cookies-table tr:nth-child(even) td {
+            background: #F9FAFB;
+        }
+
+        .badge-necessario { color: #065F46; background: #D1FAE5; padding: 2px 8px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+        .badge-funcional  { color: #1E40AF; background: #DBEAFE; padding: 2px 8px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+        .badge-terceiros  { color: #92400E; background: #FEF3C7; padding: 2px 8px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+
+        /* Caixa de direitos LGPD */
+        .direitos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin: 16px 0;
+        }
+
+        .direito-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            background: #F9FAFB;
+            border: 1px solid #E5E7EB;
+            border-radius: 4px;
+            padding: 14px;
+        }
+
+        .direito-item svg {
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .direito-item span {
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            color: #374151;
+            line-height: 1.5;
+        }
+
+        /* Caixa de contato final */
+        .legal-contact-box {
+            background: #0D1117;
+            color: #fff;
+            border-radius: 4px;
+            padding: 28px 32px;
+            margin-top: 48px;
+        }
+
+        .legal-contact-box h3 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            margin: 0 0 8px;
+            color: #fff;
+        }
+
+        .legal-contact-box p {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: rgba(255,255,255,0.7);
+            margin: 0 0 16px;
+        }
+
+        .legal-contact-links {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .legal-contact-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #2B7A1F;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.2s ease;
+        }
+
+        .legal-contact-links a:hover {
+            background: #236318;
+        }
+
+        /* Responsivo mobile */
+        @media (max-width: 600px) {
+            .legal-main {
+                padding: 60px 16px 48px;
+            }
+
+            .cookies-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            .legal-contact-box {
+                padding: 20px;
+            }
+
+            .legal-contact-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body class="legal-page">
+
+    <!-- Navbar (idêntica ao site principal) -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-main">
+            <div class="container nav-main-content">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo-desktop-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro.webp"
+                        alt="Matrix Madeiras" class="logo-desktop" width="200" height="50">
+                    <img src="assets/logo-mobile-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro(1).webp"
+                        alt="Matrix Madeiras" class="logo-mobile" width="150" height="40">
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html#servicos" class="nav-link">Produtos</a></li>
+                    <li><a href="index.html#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="index.html#depoimentos" class="nav-link">Depoimentos</a></li>
+                    <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="index.html#contato" class="nav-link">Contato</a></li>
+                    <li><a href="https://wa.me/5521964236743" class="btn btn-nav" target="_blank">Solicitar Orçamento</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="legal-main">
+
+        <!-- Breadcrumb -->
+        <nav class="legal-breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Início</a>
+            <span>›</span>
+            <span>Política de Privacidade</span>
+        </nav>
+
+        <!-- Cabeçalho da página -->
+        <header class="legal-header">
+            <span class="legal-label">Documento Legal</span>
+            <h1>Política de Privacidade</h1>
+            <p class="legal-update">Última atualização: 07 de abril de 2026</p>
+            <div class="legal-lgpd-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Em conformidade com a LGPD — Lei nº 13.709/2018
+            </div>
+        </header>
+
+        <!-- Introdução -->
+        <div class="legal-intro">
+            <p>A <strong>Matrix Madeiras</strong> valoriza a privacidade de seus visitantes. Esta Política de
+                Privacidade descreve como coletamos, usamos e protegemos as informações obtidas por meio do nosso
+                site. Ao acessar nosso site, você concorda com as práticas descritas neste documento.</p>
+        </div>
+
+        <!-- Seção 1 -->
+        <section class="legal-section">
+            <h2>1. Informações que Coletamos</h2>
+
+            <h3>1.1 Dados Fornecidos Diretamente pelo Usuário</h3>
+            <p>Quando você preenche o formulário de solicitação de orçamento ("Solicite um Orçamento"), coletamos:</p>
+            <ul>
+                <li><strong>Nome completo</strong> — campo de texto livre;</li>
+                <li><strong>Número de telefone</strong> — no formato (DDD) 9XXXX-XXXX;</li>
+                <li><strong>Produto de interesse</strong> — seleção entre: MDF e Corte CNC, Madeiras, Telhas, Portas e Caixonetes, Ferragens ou Outro;</li>
+                <li><strong>Mensagem</strong> — descrição livre da necessidade do cliente.</li>
+            </ul>
+            <p>Esses dados são utilizados exclusivamente para responder à sua solicitação de orçamento.</p>
+
+            <h3>1.2 Dados Coletados Automaticamente</h3>
+            <p>Ao navegar no site, podem ser coletados automaticamente dados técnicos como:</p>
+            <ul>
+                <li>Endereço IP e localização geográfica aproximada;</li>
+                <li>Tipo e versão do navegador utilizado;</li>
+                <li>Sistema operacional do dispositivo;</li>
+                <li>Páginas visitadas e tempo de permanência;</li>
+                <li>Cookies de sessão e preferências (detalhados na seção 3).</li>
+            </ul>
+        </section>
+
+        <!-- Seção 2 -->
+        <section class="legal-section">
+            <h2>2. Como Usamos Suas Informações</h2>
+            <p>Os dados coletados são utilizados para as seguintes finalidades:</p>
+            <ul>
+                <li><strong>Responder solicitações de orçamento</strong> enviadas pelo formulário do site;</li>
+                <li><strong>Entrar em contato via WhatsApp</strong> para atendimento personalizado;</li>
+                <li><strong>Melhorar a experiência de navegação</strong> por meio de dados de uso anônimos;</li>
+                <li><strong>Garantir a segurança</strong> do site e prevenir acessos não autorizados;</li>
+                <li><strong>Exibir conteúdos relevantes</strong> integrados de parceiros (Instagram, Google Maps).</li>
+            </ul>
+            <p>A Matrix Madeiras <strong>não realiza marketing por e-mail nem envia mensagens não solicitadas</strong>.
+                O contato ocorre apenas em resposta direta às solicitações feitas pelo usuário.</p>
+        </section>
+
+        <!-- Seção 3 -->
+        <section class="legal-section">
+            <h2>3. Cookies e Tecnologias de Rastreamento</h2>
+            <p>Nosso site utiliza cookies para melhorar sua experiência de navegação. A tabela abaixo detalha
+                os tipos de cookies utilizados:</p>
+
+            <table class="cookies-table">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Finalidade</th>
+                        <th>Origem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="badge-necessario">Necessários</span></td>
+                        <td>Essenciais para o funcionamento do site (sessão, segurança).</td>
+                        <td>Próprio</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge-funcional">Funcionais</span></td>
+                        <td>Memorizam suas preferências de navegação (ex: menu mobile aberto/fechado).</td>
+                        <td>Próprio</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge-terceiros">Terceiros — Instagram</span></td>
+                        <td>Vídeos e publicações do @matrixmadeiras incorporados via embed do Instagram
+                            (Meta Platforms, Inc.). A Meta pode coletar dados de interação.</td>
+                        <td>instagram.com</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge-terceiros">Terceiros — Google Maps</span></td>
+                        <td>Mapa de localização da loja incorporado via Google Maps. O Google pode
+                            coletar dados de localização e cookies de sessão.</td>
+                        <td>google.com</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Como gerenciar cookies:</strong> Você pode configurar seu navegador para recusar ou
+                deletar cookies. Consulte as configurações do seu navegador (Chrome, Firefox, Safari, Edge)
+                ou utilize as configurações de privacidade de cada plataforma de terceiros.</p>
+        </section>
+
+        <!-- Seção 4 -->
+        <section class="legal-section">
+            <h2>4. Compartilhamento de Dados</h2>
+            <p>A Matrix Madeiras <strong>não vende, aluga ou compartilha</strong> seus dados pessoais com outras
+                empresas para fins de marketing.</p>
+            <p>Seus dados podem ser compartilhados apenas com:</p>
+            <ul>
+                <li><strong>WhatsApp / Meta Platforms, Inc.:</strong> os dados do formulário de orçamento são
+                    encaminhados ao WhatsApp Business da empresa para possibilitar o atendimento;</li>
+                <li><strong>Instagram / Meta Platforms, Inc.:</strong> embeds de vídeos do perfil
+                    @matrixmadeiras estão incorporados ao site;</li>
+                <li><strong>Google LLC:</strong> mapa de localização da loja incorporado via Google Maps;</li>
+                <li><strong>Autoridades competentes:</strong> quando exigido por lei, ordem judicial ou
+                    regulação aplicável.</li>
+            </ul>
+        </section>
+
+        <!-- Seção 5: Direitos LGPD -->
+        <section class="legal-section">
+            <h2>5. Seus Direitos como Titular de Dados (LGPD)</h2>
+            <p>Nos termos da Lei nº 13.709/2018 (LGPD), você possui os seguintes direitos em relação aos seus
+                dados pessoais:</p>
+
+            <div class="direitos-grid">
+                <div class="direito-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2B7A1F" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Confirmação</strong> da existência de tratamento de dados</span>
+                </div>
+                <div class="direito-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2B7A1F" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Acesso</strong> aos dados pessoais armazenados</span>
+                </div>
+                <div class="direito-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2B7A1F" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Correção</strong> de dados incompletos, inexatos ou desatualizados</span>
+                </div>
+                <div class="direito-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2B7A1F" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Anonimização, bloqueio</strong> ou eliminação</span>
+                </div>
+                <div class="direito-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2B7A1F" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Portabilidade</strong> dos dados a outro fornecedor</span>
+                </div>
+                <div class="direito-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2B7A1F" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Revogação do consentimento</strong> a qualquer momento</span>
+                </div>
+                <div class="direito-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2B7A1F" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Oposição</strong> ao tratamento de dados realizado sem seu consentimento</span>
+                </div>
+                <div class="direito-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2B7A1F" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Informação</strong> sobre entidades com quem os dados são compartilhados</span>
+                </div>
+            </div>
+
+            <p>Para exercer seus direitos, entre em contato pelo WhatsApp <strong>(21) 96423-6743</strong> ou
+                pelo telefone <strong>(21) 3316-5287</strong>. Responderemos em até 15 dias úteis.</p>
+        </section>
+
+        <!-- Seção 6 -->
+        <section class="legal-section">
+            <h2>6. Segurança dos Dados</h2>
+            <p>Adotamos medidas técnicas e organizacionais razoáveis para proteger suas informações contra
+                acessos não autorizados, perda, destruição ou divulgação indevida, incluindo:</p>
+            <ul>
+                <li>Transmissão dos dados do formulário via canal seguro (WhatsApp com criptografia end-to-end);</li>
+                <li>Acesso restrito às informações dos clientes apenas por funcionários autorizados;</li>
+                <li>Não armazenamento de dados de cartão de crédito ou informações financeiras sensíveis no site.</li>
+            </ul>
+            <p>Ressaltamos que nenhum sistema é 100% seguro e, em caso de incidentes de segurança que possam
+                afetar seus dados, notificaremos os titulares e a Autoridade Nacional de Proteção de Dados
+                (ANPD) conforme exigido pela LGPD.</p>
+        </section>
+
+        <!-- Seção 7 -->
+        <section class="legal-section">
+            <h2>7. Retenção de Dados</h2>
+            <p>Os dados pessoais fornecidos via formulário de orçamento são retidos pelo tempo necessário para
+                o atendimento da solicitação e por até <strong>5 (cinco) anos</strong> para fins de histórico
+                comercial, conforme o Código de Defesa do Consumidor.</p>
+            <p>Dados coletados automaticamente (logs de acesso) são retidos por <strong>6 (seis) meses</strong>,
+                em conformidade com o art. 15 da Lei nº 12.965/2014 (Marco Civil da Internet).</p>
+            <p>Você pode solicitar a exclusão de seus dados a qualquer momento entrando em contato conosco,
+                salvo nas hipóteses em que a retenção é obrigatória por lei.</p>
+        </section>
+
+        <!-- Seção 8 -->
+        <section class="legal-section">
+            <h2>8. Menores de Idade</h2>
+            <p>Este site não é destinado a menores de 18 (dezoito) anos. Não coletamos intencionalmente dados
+                pessoais de menores. Se você é responsável legal por um menor e acredita que seus dados foram
+                coletados, entre em contato imediatamente para que possamos providenciar a exclusão.</p>
+        </section>
+
+        <!-- Seção 9 -->
+        <section class="legal-section">
+            <h2>9. Links para Sites de Terceiros</h2>
+            <p>Nosso site contém links para plataformas externas (Instagram, Facebook, WhatsApp, Google Maps).
+                Ao acessar esses links, você estará sujeito às políticas de privacidade de cada plataforma.
+                A Matrix Madeiras não se responsabiliza pelo tratamento de dados realizado por terceiros.</p>
+        </section>
+
+        <!-- Seção 10 -->
+        <section class="legal-section">
+            <h2>10. Alterações nesta Política</h2>
+            <p>Esta Política de Privacidade pode ser atualizada periodicamente para refletir mudanças nas
+                nossas práticas ou na legislação aplicável. A data de "Última atualização" no topo deste
+                documento sempre indicará quando a versão mais recente foi publicada.</p>
+            <p>O uso continuado do site após qualquer alteração constitui aceitação da nova versão da Política
+                de Privacidade.</p>
+        </section>
+
+        <!-- Seção 11: Encarregado / DPO -->
+        <section class="legal-section">
+            <h2>11. Encarregado de Dados (DPO) e Contato</h2>
+            <p>Para todas as solicitações relacionadas a esta Política de Privacidade, exercício de direitos
+                LGPD ou dúvidas sobre o tratamento de dados, entre em contato com o responsável pela
+                Matrix Madeiras:</p>
+            <ul>
+                <li><strong>Razão Social:</strong> Matrix Madeiras</li>
+                <li><strong>Endereço:</strong> Estr. Santa Eugênia, 1658 — Paciência, Rio de Janeiro - RJ, CEP 23585-430</li>
+                <li><strong>Telefone:</strong> <a href="tel:+552133165287">(21) 3316-5287</a></li>
+                <li><strong>WhatsApp:</strong> <a href="https://wa.me/5521964236743" target="_blank">(21) 96423-6743</a></li>
+                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/matrixmadeiras/" target="_blank">@matrixmadeiras</a></li>
+            </ul>
+        </section>
+
+        <!-- Caixa de contato final -->
+        <div class="legal-contact-box">
+            <h3>Exercer seus direitos ou tirar dúvidas?</h3>
+            <p>Entre em contato diretamente com nossa equipe. Respondemos em até 15 dias úteis.</p>
+            <div class="legal-contact-links">
+                <a href="https://wa.me/5521964236743" target="_blank">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp
+                </a>
+                <a href="tel:+552133165287">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Ligar Agora
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer (idêntico ao site principal) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/logo-desktop-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro.webp"
+                        alt="Matrix Madeiras" class="footer-logo" width="200" height="50">
+                    <p>Há 30 anos no Rio, a Matrix Madeiras é referência em soluções para marcenaria. Oferecemos MDF sob medida, telhas, portas e ferragens com a agilidade e o compromisso da nossa entrega rápida em toda a região.</p>
+                    <div class="footer-social">
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/matrixmadeiras/" target="_blank" aria-label="Instagram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com/matrixmadeiras/" target="_blank" aria-label="Facebook">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html#pain-solution">Vantagens</a></li>
+                        <li><a href="index.html#sobre">Nossa História</a></li>
+                        <li><a href="index.html#depoimentos">Avaliações</a></li>
+                        <li><a href="index.html#faq">Dúvidas</a></li>
+                        <li><a href="index.html#contato">Localização</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Produtos</h4>
+                    <ul>
+                        <li><a href="index.html#servicos">MDF & Corte CNC</a></li>
+                        <li><a href="index.html#servicos">Madeiras</a></li>
+                        <li><a href="index.html#servicos">Telhas</a></li>
+                        <li><a href="index.html#servicos">Portas & Caixonetes</a></li>
+                        <li><a href="index.html#servicos">Ferragens</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contato">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                <polyline points="9 22 9 12 15 12 15 22" />
+                            </svg>
+                            <a href="https://share.google/4YWBnwGMaH0EiP37d" target="_blank"><strong>Matrix Madeiras</strong></a>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=-22.93114010,-43.63592490" target="_blank">
+                                Estr. Santa Eugênia, 1658 - Paciência
+                            </a>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            <a href="tel:+552133165287">(21) 3316-5287</a>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            <a href="https://wa.me/5521964236743" target="_blank">(21) 96423-6743</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Matrix Madeiras 2026</p>
+                <div class="footer-legal-links" style="margin-top: 6px; font-size: 11px; opacity: 0.7;">
+                    <a href="termos-e-condicoes.html" style="text-decoration: none; color: inherit;">Termos e Condições</a>
+                    <span style="margin: 0 8px;">|</span>
+                    <a href="politica-de-privacidade.html" style="text-decoration: none; color: inherit;">Política de Privacidade</a>
+                </div>
+                <p>Desenvolvido por <a href="https://www.ag5agencia.com.br" target="_blank" class="ag5-link">AG5</a> Agência</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- ========================================
+         MOBILE DRAWER PREMIUM
+         ======================================== -->
+    <!-- Overlay do Drawer -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    
+    <!-- Drawer Menu -->
+    <aside class="drawer" id="drawer" aria-label="Menu de navegação mobile">
+        <div class="drawer-header">
+            <a href="index.html" class="drawer-logo">
+                <img src="assets/logo-desktop-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro.webp" 
+                     alt="Matrix Madeiras" width="160" height="40">
+            </a>
+            <button class="drawer-close" id="drawerClose" aria-label="Fechar menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <nav class="drawer-nav">
+            <ul class="drawer-menu">
+                <li><a href="index.html#servicos" class="drawer-link">Produtos</a></li>
+                <li><a href="index.html#sobre" class="drawer-link">Sobre</a></li>
+                <li><a href="index.html#depoimentos" class="drawer-link">Depoimentos</a></li>
+                <li><a href="index.html#faq" class="drawer-link">FAQ</a></li>
+                <li><a href="index.html#contato" class="drawer-link">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="drawer-footer">
+            <a href="https://wa.me/5521964236743?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o." 
+               class="btn btn-drawer" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Solicitar Orçamento
+            </a>
+        </div>
+    </aside>
+
+</body>
+
+</html>

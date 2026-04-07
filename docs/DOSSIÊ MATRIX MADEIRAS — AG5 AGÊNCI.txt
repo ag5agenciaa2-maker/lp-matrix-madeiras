@@ -1,0 +1,239 @@
+DOSSIÊ MATRIX MADEIRAS — AG5 AGÊNCIA
+
+COMANDO PARA CRIAÇÃO DO SITE
+Quero que você crie o Site institucional "Timber Industrial" em 3 arquivos (index.html, style.css e script.js), usando APENAS HTML5 semântico, CSS3 (Flexbox, Grid, variáveis CSS) e JavaScript Vanilla ES6, sem qualquer framework ou biblioteca externa.
+REGRA: Use imagens genéricas premium (Unsplash) relacionadas ao nicho caso não haja imagens reais. Inclua URLs diretas das imagens.
+
+IDENTIDADE VISUAL BASE:
+Paleta:
+
+Verde Primário: #2B7A1F
+Marrom Madeira: #8B5E1E
+Chumbo Profundo: #1C1C1C
+Off-White Quente: #F4F0EB
+Dourado Acento: #C49A3C
+
+Tipografia:
+
+Títulos: Barlow Condensed (Bold/ExtraBold, Google Fonts) — industrial, condensado, autoridade
+Corpo: Inter (Regular/Medium, Google Fonts) — legível, moderno, técnico
+Acento/Labels: Barlow Condensed Semibold Italic — rótulos em small caps
+
+Estilo: Industrial-Editorial Brasileiro — robusto, confiável, terroso. Contraste forte entre chumbo e verde vivo. Texturas sutis de madeira como recurso gráfico decorativo.
+Sensação de marca: "30 anos de raiz, máquina de última geração" — tradição que opera com precisão industrial. Não é loja barata, não é premium distante. É a referência sólida da Zona Oeste carioca.
+
+LAYOUT ESCOLHIDO:
+Hero: D) Vídeo loop + texto com máscara de cor — vídeo drone da loja em loop (Instagram /p/DGqT61YO3bJ/), overlay em chumbo rgba(28,28,28,0.72), título em Barlow Condensed ExtraBold branco ~9vw, subtítulo em verde #2B7A1F, CTA duplo (WhatsApp + Ver Produtos), barra inferior fixa com fita animada mostrando categorias. Fundo tipo: vídeo drone da loja / foto da fachada como fallback.
+Serviços: C) Zig-zag alternado — imagem e texto trocam de lado em cada bloco. Cada linha: categoria de produto/serviço com foto real (ou Unsplash), lado do texto com numeração grande (01, 02…) em #2B7A1F como elemento visual dominante, bullet features, CTA discreto. Sem cards com bordas curvas.
+Depoimentos: E) Carrossel fade + nota Google visível — card central com review, avatar inicial, estrelas, nota "3.6/5 · 38 avaliações no Google" com logo Google oficial. Prev/Next com seta. Background em chumbo #1C1C1C.
+Sobre/Credenciais: A) Counters animados + texto curto — 4 contadores em destaque: "30+ Anos no Mercado", "15km Entrega Grátis", "20+ Produtos em Estoque", "Corte CNC com Precisão". Ao lado: foto da máquina de corte SCM Star com texto de posicionamento curto e impactante.
+
+ANIMAÇÕES DO PROJETO:
+
+Hero title → de opacity:0, translateY(50px) para opacity:1, translateY(0) em 800ms, easing: cubic-bezier(0.16,1,0.3,1), trigger: load, stagger: não
+Hero CTA buttons → de opacity:0, translateY(24px) para opacity:1, translateY(0) em 500ms com delay:400ms, easing: ease-out, trigger: load, stagger: sim (120ms entre botões)
+Fita horizontal (marquee) → de translateX(0) para translateX(-50%) em 18s contínuo, easing: linear, trigger: load, loop: infinite
+Blocos zig-zag imagem → de opacity:0, translateX(-60px) para opacity:1, translateX(0) em 650ms, easing: cubic-bezier(0.25,0.46,0.45,0.94), trigger: IntersectionObserver (threshold 0.2), stagger: não
+Blocos zig-zag texto → de opacity:0, translateX(60px) para opacity:1, translateX(0) em 650ms delay 100ms, easing: cubic-bezier(0.25,0.46,0.45,0.94), trigger: IntersectionObserver, stagger: não
+Counters sobre → de 0 para valor final em 2000ms, easing: ease-in-out, trigger: IntersectionObserver (threshold 0.5), stagger: sim (150ms)
+Depoimentos → de opacity:0 para opacity:1 em 400ms cross-dissolve, easing: ease, trigger: click (prev/next)
+FAQ accordion → de max-height:0, opacity:0 para max-height:600px, opacity:1 em 380ms, easing: ease-in-out, trigger: click
+Navbar background → de background:transparent para background:#1C1C1C em 250ms, trigger: scroll (posição > 80px)
+Elementos genéricos de seção → de opacity:0, translateY(32px) para opacity:1, translateY(0) em 520ms, easing: ease-out, trigger: IntersectionObserver, stagger: sim (80ms para listas/grids)
+Hover em CTAs → background muda de verde para marrom em 200ms, arrow desloca translateX(4px) em 150ms, easing: ease
+Hover em links da navbar → underline sweep scaleX(0→1) de transform-origin: left em 200ms, easing: ease
+
+
+SEÇÕES OBRIGATÓRIAS:
+
+Navbar
+Hero [Vídeo loop drone + máscara de cor verde/chumbo]
+Seção de alto impacto: dor e solução do público-alvo ("Você perde tempo procurando material e chegando errado? Na Matrix, você encontra tudo em um lugar, na medida certa, com entrega rápida.")
+[Serviços/Produtos — Zig-zag alternado por categoria: MDF/Corte, Madeiras, Telhas, Portas/Caixonetes]
+Seção de encantamento: foto da máquina SCM de fitagem + galeria dos vídeos do Instagram em grid
+[Sobre/Credenciais — Counters animados: 30+ anos, 15km grátis, 20+ categorias, CNC precision]
+[Depoimentos — Carrossel fade + nota Google]
+Barra animada horizontal: MATRIX MADEIRAS · MDF · PORTAS · TELHAS · MADEIRAS · DECK · PACIÊNCIA - RJ
+FAQ
+Localização: Estr. Santa Eugênia, 1658 - Paciência, RJ + mapa + botão "Como Chegar" + WhatsApp + Fixo
+CTA com formulário ao lado ("Solicite um orçamento")
+Rodapé + Créditos
+
+RODAPÉ — coluna de contato:
+
+Matrix Madeiras → link Google Business (https://share.google/4YWBnwGMaH0EiP37d)
+Estr. Santa Eugênia, 1658 - Paciência, Rio de Janeiro - RJ → link Google Maps rota
+(21) 3316-5287 (fixo) — clicável tel:
+(21) 96423-6743 (WhatsApp) — link https://wa.me/5521964236743
+Instagram: @matrixmadeiras → https://www.instagram.com/matrixmadeiras/
+Facebook: @matrixmadeiras → https://www.facebook.com/matrixmadeiras/
+
+CRÉDITOS:
+Esquerda: © Matrix Madeiras 2026
+Direita: Desenvolvido por AG5 Agência (AG5 em destaque na cor #2B7A1F, link para www.ag5agencia.com.br)
+DIRETRIZES ANTI-GENÉRICO:
+
+Sem cards retangulares padrão com bordas curvas iguais
+Sem hero centralizado com fundo escuro e texto branco genérico
+Sem fade-up igual em todas as seções
+Sem paleta azul + branco + cinza
+Sem 3 colunas de ícone + título + texto
+
+
+1 — MÍDIAS PRINCIPAIS
+MídiaStatusArquivo/LinkFoto fachada✅ Disponívelfrete-loja-matrix...webp (imagem 1)Foto máquina/interior✅ Disponívelmaquina-matrix...webp (imagem 2) — máquina SCM Star de fitagem MDFLogo desktop✅ Disponíveldesktop-matrix...webp (imagem 3)Logo mobile⚠️ PendenteNão enviado (mencionado no briefing mas sem arquivo)Favicon⚠️ PendenteCaminho local mencionado, arquivo não enviadoFoto equipe❌ AusenteNão enviadaFoto proprietário(s)❌ AusenteNão enviadaFotos de produtos❌ AusenteNão enviadasVídeo drone (loja)✅ Link disponívelhttps://www.instagram.com/p/DGqT61YO3bJ/Vídeo acessórios✅ Link disponívelhttps://www.instagram.com/p/DSYNWrFEub6/Vídeo influencer madeiras✅ Link disponívelhttps://www.instagram.com/p/DIjm21pPQw4/Vídeo portas✅ Link disponívelhttps://www.instagram.com/p/DJXVW7ly3Ie/Vídeo corte madeira✅ Link disponívelhttps://www.instagram.com/p/DM_Xd5YSI2a/Vídeo telhas✅ Link disponívelhttps://www.instagram.com/p/DOhK9xhD2rV/Vídeo MDF✅ Link disponívelhttps://www.instagram.com/p/DQCUzyKEYrw/Vídeo luminárias✅ Link disponívelhttps://www.instagram.com/p/DWCNANukQBx/Print Instagram✅ Disponívelprint_instagram.png
+
+2 — INFORMAÇÕES DA EMPRESA
+Nome: Matrix Madeiras
+Nicho de atuação: Madeireira / Loja de Materiais de Construção — multissegmento (madeiras, telhas, portas, ferragens, MDF, marcenaria)
+Categorias Google: Loja de madeiras · Loja de materiais de construção · Fornecedor de portas · Empresa madeireira · Loja de marcenaria · Loja de materiais para telhados · Loja de ferragens · Loja de utensílios para carpintaria
+Descrição institucional: A Matrix Madeiras é uma madeireira de referência na Zona Oeste do Rio de Janeiro, localizada no bairro de Paciência. Com décadas de atuação no mercado, a empresa oferece ampla variedade de madeiras, telhas, portas, ferragens e soluções para construção e marcenaria, aliando bom preço, estoque completo e entrega ágil na capital.
+Proposta de valor: Bom preço, variedade de produtos, entrega rápida e serviço de qualidade.
+Slogan: "Bom preço, variedade de produtos, entrega rápida e serviço de qualidade"
+Público-alvo: Construtores, marceneiros, autônomos da construção civil, proprietários em reforma, empreiteiros da Zona Oeste do Rio de Janeiro.
+Principais produtos:
+MDF · Madeira bruta · Madeira aparelhada · Maçaranduba · Telha fibrocimento · Telha esmaltada · Telha de barro · Tábua de Pinus · Cedrinho · Madeirite · Porta · Caixonete · Janela · Fita de borda · Cola · Verniz · Caibro · Deck · Assoalho · Furadeira elétrica
+Serviços realizados:
+
+Corte e fitagem de borda em MDF
+Aparelhamento de madeira
+Montagem de caixonete
+Colocação de fechadura e dobradiças nas portas
+
+Diferenciais: Máquina SCM Star de fitagem CNC; entrega grátis até 15km; atendimento personalizado (vendedores citados por nome nas avaliações — Gilmar, Victor/Vitor); décadas de tradição; loja física grande (próprio prédio de 3 andares); Instagram ativo com conteúdo educativo.
+História: Cliente com mais de 30 anos de história mencionada em avaliação ("Compro na Matrix madeiras a 30 anos").
+
+CONTATO:
+
+Fixo: (21) 3316-5287
+WhatsApp: (21) 96423-6743
+Email: ❌ Não informado
+Endereço: Estr. Santa Eugênia, 1658 - Paciência, Rio de Janeiro - RJ, 23585-430
+Coordenadas: -22.93114010, -43.63592490
+Cidade-Estado: Rio de Janeiro - RJ
+Horário: Seg. a Sex. 8h–18h · Sáb. 8h–13h · Dom. Fechado
+
+LINKS:
+
+Site atual: https://www.matrixmadeiras.aghelp.site/ (provisório, não é o site próprio)
+Instagram: https://www.instagram.com/matrixmadeiras/ (@matrixmadeiras)
+Facebook: https://www.facebook.com/matrixmadeiras/
+Google Business: https://share.google/4YWBnwGMaH0EiP37d
+Place ID: ChIJ8_q8GFXlmwARX2A4I7_Wh84
+
+DOCUMENTAÇÃO:
+
+CNPJ: ❌ Não informado
+Registro profissional: N/A (comércio varejista)
+
+
+3 — AVALIAÇÕES
+Plataforma: Google Maps
+Total de avaliações: 38
+Nota média: 3,6 ⭐
+
+Beth Lima — Local Guide · 35 avaliações · ⭐⭐⭐⭐⭐ · há um ano
+"Compro na Matrix madeiras a 30 anos e sempre o mesmo atendimento muito atenciosos com seus clientes, hoje o vendedor Gilmar me atendeu com toda paciência pois estou a uma semana fazendo orçamento pelo WhatsApp e finalmente fui a loja finalizei a compra é uma loja de família pra família 🥰🥰🥰🥰🙏🙏🙏🙏"
+
+Kira Rufino — 3 avaliações · 4 fotos · ⭐⭐⭐⭐⭐ · há 2 anos
+"Ótimo atendimento pelos funcionários da loja e muitas variedades de produtos, referência em madeiras de alta qualidade e preços em conta, parabéns continuem assim."
+
+Jéssica do Espírito Santo — 4 avaliações · ⭐⭐⭐⭐⭐ · há 2 anos
+"Fui muito bem atendida pelo vendedor Vitor, me explicou bem sobre as portas e acessórios além do preço ser acessível"
+
+Gisele Figueiredo — 4 avaliações · ⭐⭐⭐⭐⭐ · há 2 anos
+"Gostaria de agradecer e elogiar o vendedor Victor pelo bom atendimento e pela paciência em esclarecer todas as minhas dúvidas."
+
+Jaciamara Ventura — 1 avaliação · ⭐⭐⭐⭐⭐ · há 2 anos
+"Super indico. Atendimento maravilhoso e entrega super rápida."
+
+Fabio Brum — Local Guide · 24 avaliações · 42 fotos · ⭐⭐⭐⭐⭐ · há 3 anos
+"Sempre fui muito bem vindo já virou uma excelente família 🙌🙌"
+
+Barbosafilho2015@gmail.com lima — Local Guide · 400 avaliações · 141 fotos · ⭐⭐⭐⭐⭐ · há 2 anos
+"Ótima madeireira excelente atendimento é entregas"
+
+Vinny33 Santiago — 1 avaliação · ⭐⭐⭐ · há 2 anos
+"Fui atendido de acordo com as normas, não fui tratado nem bem, nem mal ainda mais, é tão pouco tempo que não dá nem pra si despedir kkkkkkk"
+
+4 — ANÁLISE DE BRANDING
+Nicho: Madeireira / Materiais de Construção e Marcenaria — Zona Oeste RJ
+Posicionamento: Médio-Popular. Tradição consolidada (30+ anos), preço acessível, variedade ampla. Não disputa premium, mas tem diferencial técnico claro (máquina CNC de fitagem) e credibilidade de vizinhança.
+Estilo visual predominante (identidade atual):
+A marca já possui uma identidade consistente e reconhecível. A logo usa triângulo verde (evoca telhado/construção + sustentabilidade florestal) com listras diagonais em marrom amadeirado — referência direta ao material que vende. O Instagram apresenta postura editorial moderna com conteúdo educativo em fundo verde, mostrando ambição de posicionamento acima da média do nicho.
+Paleta de cores recomendada:
+NomeHEXUsoVerde Matrix#2B7A1FCor primária, CTAs, destaquesMarrom Madeira#8B5E1ECor secundária, elementos de texturaChumbo Profundo#1C1C1CFundo escuro, contraste máximoOff-White Amadeirado#F4F0EBFundo claro, backgroundsDourado Acento#C49A3CDetalhes premium, ícones, separadores
+Direção estética: Industrial-Terrosa Brasileira. Contraste máximo (chumbo + verde vivo), tipografia condensada e robusta, texturas de grão de madeira como elemento decorativo sutil (não dominante), espaçamento generoso entre seções. Referência: entre Leroy Merlin Brasil e Madeiranit — mais sólido que o varejo popular, sem a frieza do mercado B2B puro.
+Sensação de marca: Robustez familiar. "A loja que o seu pai conhecia e que hoje tem máquina de última geração." Confiança de bairro com musculatura técnica. Quem entra na Matrix sabe o que está comprando.
+Referências de empresas premium do mesmo nicho:
+
+Madeiranit (MG) — posicionamento digital consistente, paleta terrosa
+Madepar (SP) — identidade verde + madeira, site institucional sólido
+Leroy Merlin Brasil — referência de varejo de materiais com presença digital forte
+Deck & Cia (RJ) — nicho específico, identidade visual amadeirada premium
+
+
+TEMPLATE 3 — IndustryFlow / https://industryflow-template.webflow.io/home
+HERO: Fullscreen slider com 3 slides automáticos. Cada slide: imagem industrial fullbleed + overlay escuro ~60%, texto left-aligned no terço esquerdo: label numerado pequeno ("1. Manufacturing"), H1 bold ~5–6vw, subtítulo, CTA único. Paginação "01 / 03" bottom-right. Setas prev/next. Transição: fade cross-dissolve 800ms.
+NAV: Dois níveis — barra utility top (background escuro) com telefone, email, ícones sociais; nav principal (fundo branco/claro) com logo, links, botão verde "Get a Quote". Sticky no scroll.
+TIPOGRAFIA: Sans moderna limpa (~5–6vw H1), labels acento em amarelo #F5C518 (para Matrix: verde #2B7A1F), corpo em Inter 1rem. Uso de numeração grande como âncora visual nas seções de processo (01, 02, 03).
+CORES (template): Fundo navy/chumbo #1A2332, amarelo acento #F5C518, branco, cinza médio. Para Matrix: substituir navy por #1C1C1C, amarelo por verde #2B7A1F, acento secundário por marrom #8B5E1E.
+SERVIÇOS/CARDS: Grid 2 colunas: imagem fullbleed à esquerda (ocupa metade do card), conteúdo à direita (ícone SVG, título, bullet list curta, seta de link). No hover: fundo do card escurece 15%. Sem bordas aparentes.
+ANIMAÇÕES:
+
+Slider hero → fade entre slides em 800ms, easing: ease, trigger: auto-advance (4s) + click
+Counters stats → 0→valor em 1500ms, ease-in-out, trigger: IntersectionObserver 0.5
+Cards serviço → opacity:0, translateY(20px) para opacity:1, translateY(0) em 400ms, stagger: 100ms, trigger: scroll
+Depoimento slider → fade prev/next em 350ms, trigger: click
+
+MICRO-INTERAÇÕES: Botão CTA: background swap + arrow → translateX(4px) em 200ms. Card serviço hover: overlay escurece +10% opacity em 200ms. Link "Read More": underline sweep esquerda→direita.
+ELEMENTOS DECORATIVOS: Seção de mapa com pontos de localização global (visualmente marcados no mapa estático). Footer com imagem de fundo fullbleed + overlay escuro. Ícone aspas SVG nos depoimentos. Core values em pequenos blocos de ícone + texto curto.
+RESUMO CONSTRUTIVO: O slider fullscreen para Matrix deve usar imagens dos produtos e da loja (fotos enviadas + Unsplash de madeiras/construção). A estrutura do navbar duplo (utility bar + main nav) funciona bem para Matrix pois permite exibir telefone + WhatsApp + Instagram no topo sem poluir a nav principal. A seção de trabalho em 3 etapas numeradas (consulta → corte/processo → entrega) mapeia perfeitamente para o fluxo de atendimento da loja.
+
+7 — SISTEMA DE VARIAÇÃO DE LAYOUT
+Escolhas registradas para Matrix Madeiras — "Timber Industrial":
+HERO:
+
+ D) Vídeo loop + texto com máscara de cor
+
+Vídeo: drone da loja (Instagram /p/DGqT61YO3bJ/) ou fallback foto fachada
+Overlay: rgba(28,28,28,0.75) + gradiente verde sutil
+H1 em Barlow Condensed ExtraBold, ~9vw, branco
+Subtítulo em verde #2B7A1F
+CTA duplo: [WhatsApp] + [Ver Produtos]
+
+
+ H) Fundo: Vídeo drone da loja / foto fachada como imagem fallback
+
+SERVIÇOS:
+
+ C) Zig-zag alternado — imagem e texto trocam de lado
+
+Cada bloco = 1 categoria principal (MDF + Corte / Madeiras Nobres / Telhas / Portas e Caixonetes)
+Numeração 01 02 03 04 em verde #2B7A1F ~10rem como elemento visual âncora
+Sem bordas — layout edge-to-edge alternado
+
+
+
+DEPOIMENTOS:
+
+ E) Carrossel fade + nota Google visível
+
+Nota: ⭐ 3,6 · 38 avaliações · logo Google oficial
+Cards com texto completo das avaliações (não resumidos)
+Fundo chumbo #1C1C1C para contraste
+
+
+
+SOBRE / CREDENCIAIS:
+
+ A) Counters animados + texto curto
+
+Contador 1: 30+ Anos no Mercado
+Contador 2: 15km Entrega Grátis
+Contador 3: 20+ Categorias de Produto
+Contador 4: CNC Corte de Precisão (estático com ícone)
+Ao lado: foto da máquina SCM Star + parágrafo de posicionamento
+
+
+
