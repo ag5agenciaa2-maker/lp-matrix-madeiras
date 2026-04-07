@@ -539,28 +539,97 @@
                 <p>Depósito próprio com variedade de madeiras, MDF, telhas e ferragens</p>
             </div>
         </div>
-        <div class="drone-video-container">
-            <video id="droneVideo" autoplay muted playsinline class="drone-video" preload="metadata"
-                poster="assets/Imagens loja/frete-loja-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (6).webp">
-                <source
-                    src="assets/video-drone-loja-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro.mp4"
-                    type="video/mp4">
-            </video>
-            <div class="drone-overlay">
-                <div class="drone-stats">
-                    <div class="drone-stat">
-                        <span class="drone-stat-num">2000m²</span>
-                        <span class="drone-stat-label">Área</span>
-                    </div>
-                    <div class="drone-stat">
-                        <span class="drone-stat-num">20+</span>
-                        <span class="drone-stat-label">Categorias</span>
-                    </div>
-                    <div class="drone-stat">
-                        <span class="drone-stat-num">CNC</span>
-                        <span class="drone-stat-label">Corte Preciso</span>
+        
+        <!-- Vídeo Drone com Estatísticas -->
+        <div class="drone-section">
+            <div class="drone-video-wrapper">
+                <video id="droneVideo" autoplay muted playsinline loop class="drone-video-main" preload="metadata"
+                    poster="assets/Imagens loja/frete-loja-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (6).webp">
+                    <source src="assets/video-drone-loja-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro.mp4" type="video/mp4">
+                </video>
+                <!-- Estatísticas sobre o vídeo -->
+                <div class="drone-stats-overlay-top">
+                    <div class="drone-stats-horizontal">
+                        <div class="drone-stat-item">
+                            <span class="drone-stat-number">2000m²</span>
+                            <span class="drone-stat-text">Área</span>
+                        </div>
+                        <div class="drone-stat-divider"></div>
+                        <div class="drone-stat-item">
+                            <span class="drone-stat-number">20+</span>
+                            <span class="drone-stat-text">Categorias</span>
+                        </div>
+                        <div class="drone-stat-divider"></div>
+                        <div class="drone-stat-item">
+                            <span class="drone-stat-number">CNC</span>
+                            <span class="drone-stat-text">Corte Preciso</span>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Textos dos Vídeos -->
+        <div class="video-texts-container">
+            <div class="video-text-item" data-index="0">
+                <span class="video-text-label">MDF Duratex</span>
+                <h3 class="video-text-title">Qualidade e resistência para seus projetos</h3>
+                <p class="video-text-desc">O MDF da Duratex é sinônimo de excelência. Perfeito para móveis que exigem beleza e durabilidade.</p>
+            </div>
+            <div class="video-text-item active" data-index="1">
+                <span class="video-text-label">Iluminação</span>
+                <h3 class="video-text-title">Toque de alto padrão para seu ambiente</h3>
+                <p class="video-text-desc">A iluminação certa transforma completamente qualquer espaço. Descubra nossas soluções em perfis de LED.</p>
+            </div>
+            <div class="video-text-item" data-index="2">
+                <span class="video-text-label">Portas</span>
+                <h3 class="video-text-title">Modelos que encantam pela beleza</h3>
+                <p class="video-text-desc">Cada porta é pensada para entregar elegância, segurança e acabamento impecável para sua obra.</p>
+            </div>
+        </div>
+
+        <!-- Carrossel 3D de Vídeos -->
+        <div class="video-carousel-container">
+            <div class="video-carousel" id="videoCarousel">
+                <!-- Vídeo 1 - MDF Duratex -->
+                <div class="carousel-video-wrapper" data-index="0">
+                    <div class="carousel-video-card">
+                        <video class="carousel-video" muted playsinline preload="metadata" loop
+                            poster="assets/Imagens loja/mdf-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (1).webp">
+                            <source src="Modelo Link 360/assets/O MDF da Duratex é conhecido pela qualidade, resistência e beleza! Perfeito para quem busca um r.mp4" type="video/mp4">
+                        </video>
+                        <div class="carousel-video-overlay"></div>
+                    </div>
+                </div>
+                
+                <!-- Vídeo 2 - Iluminação (Centro/Inicial) -->
+                <div class="carousel-video-wrapper active" data-index="1">
+                    <div class="carousel-video-card">
+                        <video class="carousel-video" autoplay muted playsinline preload="metadata" loop
+                            poster="assets/Imagens loja/matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (8).webp">
+                            <source src="Modelo Link 360/assets/Quer dar um toque de alto padrão no seu projeto 💡✨A iluminação certa transforma completamente q.mp4" type="video/mp4">
+                        </video>
+                        <div class="carousel-video-overlay"></div>
+                    </div>
+                </div>
+                
+                <!-- Vídeo 3 - Portas -->
+                <div class="carousel-video-wrapper" data-index="2">
+                    <div class="carousel-video-card">
+                        <video class="carousel-video" muted playsinline preload="metadata" loop
+                            poster="assets/Imagens loja/portas-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (7).webp">
+                            <source src="Modelo Link 360/assets/Uma porta mais linda que a outra!Na Matrix Madeiras, cada modelo é pensado pra entregar beleza, .mp4" type="video/mp4">
+                        </video>
+                        <div class="carousel-video-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button class="carousel-dot" data-index="0" aria-label="Vídeo 1"></button>
+                <button class="carousel-dot active" data-index="1" aria-label="Vídeo 2"></button>
+                <button class="carousel-dot" data-index="2" aria-label="Vídeo 3"></button>
             </div>
         </div>
     </section>

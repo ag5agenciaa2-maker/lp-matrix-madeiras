@@ -621,3 +621,184 @@ const throttle = (func, limit) => {
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { debounce, throttle };
 }
+
+// ========================================
+// CARROSSEL 3D DE VÍDEOS - Nossa Estrutura
+// ========================================
+document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.getElementById('videoCarousel');
+    const videoWrappers = document.querySelectorAll('.carousel-video-wrapper');
+    const dots = document.querySelectorAll('.carousel-dot');
+    const textItems = document.querySelectorAll('.video-text-item');
+    
+    if (!carousel || videoWrappers.length === 0) return;
+    
+    let currentIndex = 1; // Vídeo do centro começa ativo
+    let isDragging = false;
+    let startX = 0;
+    let currentTranslate = 0;
+    
+    // Atualiza o estado do carrossel
+    function updateCarousel(newIndex) {
+        if (newIndex < 0) newIndex = 2;
+        if (newIndex > 2) newIndex = 0;
+        
+        currentIndex = newIndex;
+        
+        // Atualiza posições dos vídeos
+        videoWrappers.forEach((wrapper, index) => {
+            // Calcula a posição relativa ao vídeo ativo
+            let relativeIndex = index - currentIndex;
+            
+            // Ajusta para circular
+            if (relativeIndex < -1) relativeIndex += 3;
+            if (relativeIndex > 1) relativeIndex -= 3;
+            
+            // Atualiza data-index para CSS aplicar posição correta
+            wrapper.setAttribute('data-index', relativeIndex + 1);
+            
+            // Gerencia classe active
+            wrapper.classList.toggle('active', relativeIndex === 0);
+            
+            // Controla reprodução dos vídeos
+            const video = wrapper.querySelector('.carousel-video');
+            if (video) {
+                if (relativeIndex === 0) {
+                    video.play().catch(() => {});
+                } else {
+                    video.pause();
+                    video.currentTime = 0;
+                }
+            }
+        });
+        
+        // Atualiza indicadores
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+        
+        // Atualiza textos
+        textItems.forEach((item, index) => {
+            item.classList.toggle('active', index === currentIndex);
+        });
+    }
+    
+    // Navegação por clique nos vídeos
+    videoWrappers.forEach((wrapper, index) => {
+        wrapper.addEventListener('click', (e) => {
+            const relativeIndex = parseInt(wrapper.getAttribute('data-index'));
+            
+            // Se clicar no vídeo da esquerda (data-index=0), move para direita
+            if (relativeIndex === 0) {
+                updateCarousel(currentIndex - 1);
+            }
+            // Se clicar no vídeo da direita (data-index=2), move para esquerda
+            else if (relativeIndex === 2) {
+                updateCarousel(currentIndex + 1);
+            }
+            // Se clicar no vídeo do centro, não faz nada (já está ativo)
+        });
+        
+        // Adiciona cursor pointer para indicar que é clicável
+        wrapper.style.cursor = 'pointer';
+    });
+    
+    // Navegação por dots
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            updateCarousel(index);
+        });
+    });
+    
+    // Navegação por arrastar (swipe)
+    carousel.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.clientX;
+        carousel.style.cursor = 'grabbing';
+    });
+    
+    carousel.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+    });
+    
+    carousel.addEventListener('mouseup', (e) => {
+        if (!isDragging) return;
+        isDragging = false;
+        carousel.style.cursor = 'grab';
+        
+        const diff = e.clientX - startX;
+        const threshold = 50; // Mínimo de pixels para considerar swipe
+        
+        if (Math.abs(diff) > threshold) {
+            if (diff > 0) {
+                updateCarousel(currentIndex - 1); // Swipe direita -> anterior
+            } else {
+                updateCarousel(currentIndex + 1); // Swipe esquerda -> próximo
+            }
+        }
+    });
+    
+    carousel.addEventListener('mouseleave', () => {
+        if (isDragging) {
+            isDragging = false;
+            carousel.style.cursor = 'grab';
+        }
+    });
+    
+    // Touch events para mobile
+    carousel.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        startX = e.touches[0].clientX;
+    }, { passive: true });
+    
+    carousel.addEventListener('touchend', (e) => {
+        if (!isDragging) return;
+        isDragging = false;
+        
+        const diff = e.changedTouches[0].clientX - startX;
+        const threshold = 50;
+        
+        if (Math.abs(diff) > threshold) {
+            if (diff > 0) {
+                updateCarousel(currentIndex - 1);
+            } else {
+                updateCarousel(currentIndex + 1);
+            }
+        }
+    });
+    
+    // Navegação por teclado
+    carousel.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+            updateCarousel(currentIndex - 1);
+        } else if (e.key === 'ArrowRight') {
+            updateCarousel(currentIndex + 1);
+        }
+    });
+    
+    // Torna o carrossel focável
+    carousel.setAttribute('tabindex', '0');
+    
+    // Inicializa o carrossel
+    updateCarousel(currentIndex);
+    
+    // Pausa vídeos quando não visíveis (intersection observer)
+    const carouselObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const videos = entry.target.querySelectorAll('.carousel-video');
+            videos.forEach((video, index) => {
+                const wrapper = video.closest('.carousel-video-wrapper');
+                const isCenter = wrapper.getAttribute('data-index') === '1';
+                
+                if (entry.isIntersecting && isCenter) {
+                    video.play().catch(() => {});
+                } else {
+                    video.pause();
+                }
+            });
+        });
+    }, { threshold: 0.5 });
+    
+    carouselObserver.observe(carousel);
+});
