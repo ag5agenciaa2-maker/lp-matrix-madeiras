@@ -20,7 +20,7 @@ Corpo: Inter (Regular/Medium, Google Fonts) — legível, moderno, técnico
 Acento/Labels: Barlow Condensed Semibold Italic — rótulos em small caps
 
 Estilo: Industrial-Editorial Brasileiro — robusto, confiável, terroso. Contraste forte entre chumbo e verde vivo. Texturas sutis de madeira como recurso gráfico decorativo.
-Sensação de marca: "30 anos de raiz, máquina de última geração" — tradição que opera com precisão industrial. Não é loja barata, não é premium distante. É a referência sólida da Zona Oeste carioca.
+Sensação de marca: "+25 anos de raiz, máquina de última geração" — tradição que opera com precisão industrial. Não é loja barata, não é premium distante. É a referência sólida da Zona Oeste carioca.
 
 LAYOUT ESCOLHIDO:
 Hero: D) Vídeo loop + texto com máscara de cor — vídeo drone da loja em loop (Instagram /p/DGqT61YO3bJ/), overlay em chumbo rgba(28,28,28,0.72), título em Barlow Condensed ExtraBold branco ~9vw, subtítulo em verde #2B7A1F, CTA duplo (WhatsApp + Ver Produtos), barra inferior fixa com fita animada mostrando categorias. Fundo tipo: vídeo drone da loja / foto da fachada como fallback.
@@ -101,7 +101,7 @@ Montagem de caixonete
 Colocação de fechadura e dobradiças nas portas
 
 Diferenciais: Máquina SCM Star de fitagem CNC; entrega grátis até 15km; atendimento personalizado (vendedores citados por nome nas avaliações — Gilmar, Victor/Vitor); décadas de tradição; loja física grande (próprio prédio de 3 andares); Instagram ativo com conteúdo educativo.
-História: Cliente com mais de 30 anos de história mencionada em avaliação ("Compro na Matrix madeiras a 30 anos").
+História: Cliente com mais de 25 anos de história mencionada em avaliação ("Compro na Matrix madeiras a +25 anos").
 
 CONTATO:
 
@@ -133,7 +133,7 @@ Total de avaliações: 38
 Nota média: 3,6 ⭐
 
 Beth Lima — Local Guide · 35 avaliações · ⭐⭐⭐⭐⭐ · há um ano
-"Compro na Matrix madeiras a 30 anos e sempre o mesmo atendimento muito atenciosos com seus clientes, hoje o vendedor Gilmar me atendeu com toda paciência pois estou a uma semana fazendo orçamento pelo WhatsApp e finalmente fui a loja finalizei a compra é uma loja de família pra família 🥰🥰🥰🥰🙏🙏🙏🙏"
+"Compro na Matrix madeiras a mais de 25 anos e sempre o mesmo atendimento muito atenciosos com seus clientes, hoje o vendedor Gilmar me atendeu com toda paciência pois estou a uma semana fazendo orçamento pelo WhatsApp e finalmente fui a loja finalizei a compra é uma loja de família pra família 🥰🥰🥰🥰🙏🙏🙏🙏"
 
 Kira Rufino — 3 avaliações · 4 fotos · ⭐⭐⭐⭐⭐ · há 2 anos
 "Ótimo atendimento pelos funcionários da loja e muitas variedades de produtos, referência em madeiras de alta qualidade e preços em conta, parabéns continuem assim."

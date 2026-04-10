@@ -580,7 +580,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // CONSOLE LOG - Branding
     // ========================================
     console.log('%c Matrix Madeiras ', 'background: #2B7A1F; color: #fff; font-size: 24px; font-weight: bold; padding: 10px 20px;');
-    console.log('%c Timber Industrial - 30 anos de tradição ', 'color: #8B5E1E; font-size: 14px;');
+    console.log('%c Timber Industrial - +25 anos de tradição ', 'color: #8B5E1E; font-size: 14px;');
     console.log('%c Desenvolvido por AG5 Agência ', 'color: #C49A3C; font-size: 12px;');
 });
 
@@ -801,4 +801,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.5 });
     
     carouselObserver.observe(carousel);
+
+    // ========================================
+    // SHAKE ANIMATION TRIGGER - Nossa Estrutura
+    // ========================================
+    const lojaSection = document.getElementById('loja');
+    const lojaHeader = document.querySelector('.loja-header');
+    
+    if (lojaSection && lojaHeader) {
+        const shakeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    lojaHeader.classList.add('shake-active');
+                    // Remove após 1 segundo para não ficar exaustivo
+                    setTimeout(() => {
+                        lojaHeader.classList.remove('shake-active');
+                    }, 1000);
+                }
+            });
+        }, { threshold: 0.2 });
+        
+        shakeObserver.observe(lojaSection);
+    }
 });

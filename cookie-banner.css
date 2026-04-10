@@ -163,8 +163,8 @@
 /* Outline — Borda sutil */
 .ck-btn--outline {
     background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    color: rgba(255, 255, 255, 0.38);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .ck-btn--outline:hover {
@@ -175,12 +175,13 @@
 /* Ghost — Link underline */
 .ck-btn--ghost {
     background: transparent;
-    color: rgba(255, 255, 255, 0.3);
+    color: var(--ck-accent);
     border: none;
     padding: 0.38rem 0.4rem;
     text-decoration: underline;
     text-underline-offset: 2px;
     font-size: 0.72rem;
+    font-weight: 600;
 }
 
 /* ============================================================

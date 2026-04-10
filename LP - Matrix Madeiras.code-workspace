@@ -5,6 +5,7 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "LP - Matrix Madeiras"
+		"liveServer.settings.multiRootWorkspaceName": "LP - Matrix Madeiras",
+		"liveServer.settings.port": 5501
 	}
 }

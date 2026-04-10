@@ -21,7 +21,7 @@
 
 ## 🔵 COMPLEMENTARES
 
-- [x] `foundingDate` — ✅ Estimado em 1994 (30+ anos mencionados nas avaliações)
+- [x] `foundingDate` — ✅ Estimado em 2000 (25+ anos mencionados nas avaliações)
 - [ ] `founder.name` — Não identificado no site (proprietário não mencionado explicitamente)
 - [ ] `founder.sameAs` — Instagram pessoal do responsável não encontrado
 - [x] `priceRange` — ✅ Definido como "$$" (médio-popular conforme briefing)
