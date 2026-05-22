@@ -360,7 +360,7 @@ img {
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    background-image: url('assets/Imagens loja/madeiras-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (5).webp');
+    background-image: url('assets/madeiras-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (5).webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -2029,7 +2029,7 @@ img {
 .orcamento-section {
     position: relative;
     padding: calc(var(--section-padding) * 1.5) 0;
-    background-image: url('assets/Imagens loja/madeiras-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (5).webp');
+    background-image: url('assets/madeiras-matrix-madeiras-madereira-marcenaria-mdf-portas-ferragens-rio-de-janeiro (5).webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
